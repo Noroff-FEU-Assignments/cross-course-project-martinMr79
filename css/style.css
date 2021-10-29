@@ -1,0 +1,61 @@
+/*Global*/ 
+
+nav ul {
+    padding:0px;
+  }
+
+  nav li {
+    display: inline-block;
+  }
+  header,
+  footer {
+    background-color: #DAD9CC;
+    color: #474204;
+  }
+
+  header {
+    display: flex;
+  }
+
+  header a {
+    color: #0a3641;
+    padding: 10px;
+    text-decoration: none;      
+  }
+
+  h1 {
+      color: #0a3641 ;
+  }
+
+  .cta {
+    background-color: #fff;
+    color: #474204;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 10px 80px;
+    border-radius: 5px;
+    border: 1px black;
+  }
+
+/*Home page*/ 
+
+
+textarea {
+    border-radius: 4px;
+    margin: 10px;
+    justify-content: center;
+}
+
+.homepage__img {
+    background-image: url(images/background_img.jpg)
+}
+
+
+
+
+
+
+/*About*/
+
+
+/*Contact*/ 
