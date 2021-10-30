@@ -1,61 +1,89 @@
-/*Global*/ 
+/*Global*/
 
 nav ul {
-    padding:0px;
-  }
+  padding: 0px;
+}
 
-  nav li {
-    display: inline-block;
-  }
-  header,
-  footer {
-    background-color: #DAD9CC;
-    color: #474204;
-  }
+nav li {
+  display: inline-block;
+  border-width: 1px;
+  border-style: solid;
+  margin: 0px;
+}
 
-  header {
-    display: flex;
-  }
+header,
+footer {
+  background-color: #dad9cc;
+  color: #474204;
+}
 
-  header a {
-    color: #0a3641;
-    padding: 10px;
-    text-decoration: none;      
-  }
+header {
+  display: flex;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #dad9cc;
+  color: #474204;
+}
 
-  h1 {
-      color: #0a3641 ;
-  }
+header a {
+  color: #0a3641;
+  padding: 10px;
+  text-decoration: none;
+}
 
-  .cta {
-    background-color: #fff;
-    color: #474204;
-    font-size: 1em;
-    text-transform: uppercase;
-    padding: 10px 80px;
-    border-radius: 5px;
-    border: 1px black;
-  }
+h1 {
+  color: #0a3641;
+}
 
-/*Home page*/ 
+.cta {
+  background-color: #fff;
+  color: #474204;
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 10px 80px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: black;
+  text-decoration: none;
+  width: 190px;
+  height: 45px;
+}
 
+.logo {
+  margin-left: 20px;
+  position: relative;
+  bottom: 14px;
+  
+}
+
+/*Home page*/
 
 textarea {
-    border-radius: 4px;
-    margin: 10px;
-    justify-content: center;
+  border-radius: 10px;
+  margin: 10px auto;
+  width: 367px;
+  height: 47px;
+  align-items: center;
 }
 
 .homepage__img {
-    background-image: url(images/background_img.jpg)
+  background-image: url("../images/background_img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: right;  
+  background-position-y: center;
+  min-height: 100vh;
 }
 
+.slogan {
+    position: absolute;
+    text-align: center;
+    top: 200px;
+    left: 100px;
+}
 
-
-
-
-
+<i class="fas fa-cart-arrow-down"></i>
 /*About*/
 
 
-/*Contact*/ 
