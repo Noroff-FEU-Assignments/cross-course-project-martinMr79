@@ -4,11 +4,13 @@ nav ul {
   padding: 0px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-
 }
 
 nav li {
   display: inline-block;
+  padding: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   border-width: 1px;
   border-style: solid;
 }
@@ -25,29 +27,35 @@ header {
   border-style: solid;
   border-width: 1px;
   justify-content: end;
+  margin: 0px;
+  font-size: 13px;
+  font-family: "Merriweather", "bold", "Sans";
+  height: 85px;
 }
 
 header a {
   color: #0a3641;
-  padding: 0px;
+  padding: 40px;
   text-decoration: none;
   z-index: 2;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 0px;
-  margin-bottom: auto;
+  margin-bottom: auto;  
+  justify-content: center;
 }
+
 
 h1 {
   color: #0a3641;
-  font-size: 24;
+  font-size: 24px;
   font-family: "Merriweather Sans", sans-serif;
 }
 
 .cta {
   background-color: #fff;
   color: #474204;
-  font-size: 19px; 
+  font-size: 19px;
   text-transform: uppercase;
   padding: 10px 80px;
   border-radius: 10px;
@@ -60,11 +68,14 @@ h1 {
   font-family: "Quattrocento", "Times New Roman", Times, serif;
 }
 
-.logo {
-  margin-left: 20px;
-  position: relative;
-  bottom: 14px;
-  opacity: 0.5;
+.logo {   
+  display: flex;
+  position: sticky;
+  right: 10 px;
+  padding: 5px;
+  opacity: 0.6;
+  height: 90px;
+
 }
 
 /*Home page*/
@@ -77,10 +88,11 @@ textarea {
   top: 120px;
   left: 10px;
   right: 10px;
-  margin: 10px auto;
+  margin: 5px auto;
+  padding: 0px;
   width: 366px;
   height: 47px;
-  align-items: center;
+ 
 }
 
 .homepage__img {
