@@ -2,6 +2,9 @@
 
 nav ul {
   padding: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
 }
 
 nav li {
@@ -44,8 +47,7 @@ h1 {
 .cta {
   background-color: #fff;
   color: #474204;
-  font-size: 19px;
-  font-family: ;
+  font-size: 19px; 
   text-transform: uppercase;
   padding: 10px 80px;
   border-radius: 10px;
@@ -76,7 +78,7 @@ textarea {
   left: 10px;
   right: 10px;
   margin: 10px auto;
-  width: 367px;
+  width: 366px;
   height: 47px;
   align-items: center;
 }
