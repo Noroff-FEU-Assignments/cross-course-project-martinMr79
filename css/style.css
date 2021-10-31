@@ -1,16 +1,13 @@
-
 /*Global*/
 
 nav ul {
   padding: 0px;
-  
 }
 
 nav li {
   display: inline-block;
   border-width: 1px;
   border-style: solid;
-    
 }
 
 header,
@@ -24,7 +21,7 @@ header {
   align-items: center;
   border-style: solid;
   border-width: 1px;
-  justify-content: end;  
+  justify-content: end;
 }
 
 header a {
@@ -35,7 +32,7 @@ header a {
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 0px;
-  margin-bottom: auto; 
+  margin-bottom: auto;
 }
 
 h1 {
@@ -47,7 +44,8 @@ h1 {
 .cta {
   background-color: #fff;
   color: #474204;
-  font-size: 1em;
+  font-size: 19px;
+  font-family: ;
   text-transform: uppercase;
   padding: 10px 80px;
   border-radius: 10px;
@@ -57,6 +55,7 @@ h1 {
   text-decoration: none;
   width: 190px;
   height: 45px;
+  font-family: "Quattrocento", "Times New Roman", Times, serif;
 }
 
 .logo {
@@ -69,14 +68,17 @@ h1 {
 /*Home page*/
 
 textarea {
+  border-radius: 12px;
+  border-color: #474204;
   position: absolute;
   text-align: center;
   top: 120px;
-  left: 150px;
-  right: 150px;
+  left: 10px;
+  right: 10px;
   margin: 10px auto;
   width: 367px;
   height: 47px;
+  align-items: center;
 }
 
 .homepage__img {
@@ -92,8 +94,9 @@ textarea {
   position: absolute;
   text-align: center;
   top: 190px;
-  left: 25px;
-  right: 25px;
+  left: 10px;
+  right: 10px;
+  z-index: 2;
 }
 
 .homepage-cta {
@@ -103,10 +106,5 @@ textarea {
   left: 55px;
   right: 55px;
 }
-
-
-
-/*<i class="fas fa-cart-arrow-down"></i>*/
-
 
 /*About*/
