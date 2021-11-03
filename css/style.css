@@ -1,5 +1,12 @@
 /*Global*/
 
+body {
+  min-height: 100vh;
+  margin: 0px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
 nav ul {
   padding: 0px;
   display: grid;
@@ -44,6 +51,11 @@ header a {
   justify-content: center;
 }
 
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
 h1 {
   color: #0a3641;
   font-size: 24px;
@@ -62,7 +74,7 @@ h1 {
   border-width: 1px;
   text-decoration: none;
   width: 190px;
-  height: 45px;  
+  height: 45px;
   font-family: "Quattrocento", "Times New Roman", Times, serif;
 }
 
@@ -81,8 +93,8 @@ textarea {
   position: absolute;
   text-align: center;
   top: 120px;
-  left: 10px;
-  right: 10px;
+  left: 3px;
+  right: 3px;
   margin: 5px auto;
   padding: 0px;
   width: 366px;
@@ -116,44 +128,44 @@ textarea {
   right: 55px;
 }
 
+/*@media*/
+
 @media (min-width: 800px) {
-    header {
-        display: flex;
-        align-items: center;
-        border-style: solid;
-        border-width: 1px;
-        justify-content: end;   
-        font-size: 26px;
-        font-family: "Merriweather", "bold", "Sans";
-        height: 85px; 
-    }
+  header {
+    display: flex;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    justify-content: end;
+    font-size: 26px;
+    font-family: "Merriweather", "bold", "Sans";
+    height: 85px;
+  }
 
-    nav li {
-        display: inline-block;
-        padding: 16px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        border-width: 1px;
-        border-style: solid;
-      }
+  nav li {
+    display: inline-block;
+    padding: 16px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-style: px, solid;
+  }
 
-      .homepage__img {
-        min-height: 80vh
-      }
-
-
+  .homepage__img {
+    min-height: 100vh;
+    background-size: 80%;
+    background-position-x: center;
+    background-position-y: center;
+  }
 }
 
 @media (max-width: 700px) {
-    header a {
-        color: #0a3641;
-        padding: 5px;
- 
-      }
-      nav li {
-        padding: 30px 10px;    
-      }
-
+  header a {
+    color: #0a3641;
+    padding: 5px;
+  }
+  nav li {
+    padding: 30px 10px;
+  }
 }
 
 /*About*/
