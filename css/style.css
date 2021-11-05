@@ -49,17 +49,41 @@ header a {
   margin-top: 0px;
   margin-bottom: auto;
   justify-content: center;
+  
 }
 
 footer {
-  text-align: center;
-  padding: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
 }
+
+footer a {
+  color: #0a3641;
+  padding: 25px;
+  text-decoration: none;
+  z-index: 2;
+  justify-content: center;
+  text-decoration: none;
+}
+
+  footer ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-decoration: none;
+  }
+
+  footer li {
+    display: inline-block;
+
+  }
+
 
 h1 {
   color: #0a3641;
   font-size: 24px;
   font-family: "Merriweather Sans", sans-serif;
+  margin: 10px;
 }
 
 .cta {
@@ -121,12 +145,12 @@ textarea {
 }
 
 .homepage-cta {
-  position: absolute;
+  position: relative;
   text-align: center;
-  bottom: 90px;
-  left: 55px;
-  right: 55px;
+  top: 280px;
+          
 }
+
 
 /*@media*/
 
@@ -165,6 +189,9 @@ textarea {
   }
   nav li {
     padding: 30px 10px;
+  }
+  footer {
+    display: none;
   }
 }
 
