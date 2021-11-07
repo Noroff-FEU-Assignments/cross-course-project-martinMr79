@@ -49,12 +49,11 @@ header a {
   margin-top: 0px;
   margin-bottom: auto;
   justify-content: center;
-  
 }
 
 footer {
   padding: 10px;
-  display: flex;
+  display: block;
   justify-content: center;
 }
 
@@ -67,23 +66,42 @@ footer a {
   text-decoration: none;
 }
 
-  footer ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    text-decoration: none;
-  }
+footer ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-decoration: none;
+}
 
-  footer li {
-    display: inline-block;
-
-  }
-
+footer li {
+  display: inline-block;
+}
 
 h1 {
   color: #0a3641;
   font-size: 24px;
   font-family: "Merriweather Sans", sans-serif;
   margin: 10px;
+}
+
+h2 {
+  color: #007694;
+  font-size: 18px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 12px;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+p {
+  margin: 5px;
+  font-size: 16px;
+  font-style: "Merriweather", "serif";
+  text-align: center;
 }
 
 .cta {
@@ -148,9 +166,22 @@ textarea {
   position: relative;
   text-align: center;
   top: 280px;
-          
 }
 
+/*About*/
+
+.about__img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: bottom;
+  background-position-y: center;
+  margin: 20px;
+  min-width: 100%;
+}
+
+.about__img__container {
+  max-width: auto;
+}
 
 /*@media*/
 
@@ -168,10 +199,10 @@ textarea {
 
   nav li {
     display: inline-block;
-    padding: 16px;
+    padding: 26px;
     margin-top: 0px;
     margin-bottom: 0px;
-    border-style: px, solid;
+    border-style: 1px, solid;
   }
 
   .homepage__img {
@@ -194,5 +225,3 @@ textarea {
     display: none;
   }
 }
-
-/*About*/
