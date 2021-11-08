@@ -108,7 +108,7 @@ p {
   margin: 5px;
   font-size: 12px;
   font-family: "Merriweather", "regular", "Sans";
-  text-align: left;
+  text-align: center;
 }
 
 .cta {
@@ -130,6 +130,7 @@ p {
 
 .homepage-cta:hover {
   transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
 
 .logo {
@@ -197,6 +198,10 @@ textarea {
 }
 
 /*Contact page*/
+
+.icon-container {
+  text-align: center;
+}
 
 .contact-icons {
   border-width: 1px;
