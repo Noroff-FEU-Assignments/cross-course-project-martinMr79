@@ -54,16 +54,15 @@ header a {
 footer {
   padding: 10px;
   display: block;
-  justify-content: center;
+  justify-content: space-evenly;
+  text-align: center;
 }
 
 footer a {
   color: #0a3641;
-  padding: 25px;
+  padding: 5px;
   text-decoration: none;
   z-index: 2;
-  justify-content: center;
-  text-decoration: none;
 }
 
 footer ul {
@@ -74,6 +73,7 @@ footer ul {
 
 footer li {
   display: inline-block;
+  padding: 0px;
 }
 
 h1 {
@@ -180,7 +180,6 @@ textarea {
 }
 
 .about__img__container {
-  
 }
 
 /*@media*/
@@ -223,5 +222,19 @@ textarea {
   }
   footer {
     display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  textarea {
+    width: 268px;
+    height: 27px;
+    font-size: 16px;
+  }
+
+  .logo {
+    position: sticky;
+    padding: 2px;
+    height: 50px;
   }
 }
