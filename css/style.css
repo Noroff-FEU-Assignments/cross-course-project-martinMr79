@@ -69,12 +69,16 @@ footer a {
   padding: 5px;
   text-decoration: none;
   z-index: 2;
+  margin: 5px 45px;
 }
 
 footer ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   text-decoration: none;
+  padding: 0;
+  margin: 0px;
 }
 
 footer li {
@@ -213,6 +217,20 @@ textarea {
   align-items: center;
   justify-content: center;
   display: inline-block;
+}
+
+/*Products*/
+
+.products-img-container {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.products-img {
+  max-width: 100%;
+  height: auto;
 }
 
 /*@media*/
