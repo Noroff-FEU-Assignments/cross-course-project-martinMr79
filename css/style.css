@@ -26,6 +26,7 @@ nav li {
   margin-bottom: 0px;
   border-width: 1px;
   border-style: solid;
+  border-right: none;
 }
 
 header,
@@ -132,11 +133,6 @@ p {
   font-family: "Quattrocento", "Times New Roman", Times, serif;
 }
 
-.homepage-cta:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
-}
-
 .logo {
   position: sticky;
   right: 2900px;
@@ -185,6 +181,11 @@ textarea {
   top: 280px;
 }
 
+.homepage-cta:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
 /*About*/
 
 .about__img {
@@ -225,12 +226,34 @@ textarea {
   max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
+  gap: 10px;
+  margin: 0px;
+  object-fit: fill;
 }
 
 .products-img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  margin: 0px;
+  padding: 0px;
+}
+
+.small-cta {
+
+}
+
+/*purchase Confirmed*/
+
+.check_container {
+  border: solid 1px;
+  border-radius: 50%;
+  padding: 8px;
+  display: inline-flex;
+  align-items: center;
+  color: #0a3641;
+  
+  
 }
 
 /*@media*/
@@ -243,7 +266,7 @@ textarea {
     border-width: 1px;
     justify-content: end;
     font-size: 26px;
-    font-family: "Merriweather", "bold", "Sans";
+    font-family: "Merriweather", "bold" "Sans";
     height: 85px;
   }
 
@@ -261,7 +284,7 @@ textarea {
 
   nav li {
     display: inline-block;
-    padding: 25px;
+    padding: 26px;
     margin-top: 0px;
     margin-bottom: 0px;
     border-style: 1px, solid;
@@ -278,6 +301,10 @@ textarea {
     background-size: 80%;
     background-position-x: center;
     background-position-y: center;
+  }
+
+  .products-img-container {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -305,5 +332,14 @@ textarea {
     position: sticky;
     padding: 2px;
     height: 50px;
+  }
+
+  .products-img-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .products-img {
+    min-height: 555px;
+    object-fit: cover;
   }
 }
