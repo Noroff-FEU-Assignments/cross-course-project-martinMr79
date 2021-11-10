@@ -10,7 +10,7 @@ body {
 main {
   max-width: 1800px;
   margin: 0 auto;
-  padding-top: 55px;
+  
 }
 
 nav ul {
@@ -105,7 +105,7 @@ h2 {
 
 h1,
 h2,
-h3 {
+p {
   text-align: center;
 }
 
@@ -113,7 +113,6 @@ p {
   margin: 5px;
   font-size: 12px;
   font-family: "Merriweather", "regular", "Sans";
-  text-align: center;
 }
 
 .cta {
@@ -147,7 +146,7 @@ textarea {
   border-color: #474204;
   position: absolute;
   text-align: center;
-  top: 120px;
+  top: 200px;
   left: 3px;
   right: 3px;
   margin: 5px auto;
@@ -155,6 +154,7 @@ textarea {
   width: 366px;
   height: 37px;
   font-size: 26px;
+  
 }
 
 .homepage__img {
@@ -169,7 +169,7 @@ textarea {
 .slogan {
   position: absolute;
   text-align: center;
-  top: 190px;
+  top: 110px;
   left: 10px;
   right: 10px;
   z-index: 2;
@@ -215,8 +215,6 @@ textarea {
   margin: 30px;
   border: solid 1px black;
   border-radius: 20%;
-  align-items: center;
-  justify-content: center;
   display: inline-block;
 }
 
@@ -240,7 +238,19 @@ textarea {
 }
 
 .small-cta {
+}
 
+/*products specific*/
+
+.raincoat_img {
+
+width: 100%;
+height: auto;
+max-height: 80vh;
+}
+
+.product_specific_main {
+  
 }
 
 /*purchase Confirmed*/
@@ -250,10 +260,17 @@ textarea {
   border-radius: 50%;
   padding: 8px;
   display: inline-flex;
-  align-items: center;
   color: #0a3641;
-  
-  
+
+  align-items: center;
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.center_icon {
+  text-align: center;
 }
 
 /*@media*/
@@ -306,6 +323,7 @@ textarea {
   .products-img-container {
     grid-template-columns: repeat(3, 1fr);
   }
+
 }
 
 @media (max-width: 700px) {
@@ -326,6 +344,7 @@ textarea {
     width: 268px;
     height: 27px;
     font-size: 16px;
+    top: 170px;
   }
 
   .logo {
