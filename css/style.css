@@ -10,7 +10,6 @@ body {
 main {
   max-width: 1800px;
   margin: 0 auto;
-  
 }
 
 nav ul {
@@ -29,12 +28,12 @@ nav li {
   border-right: none;
 }
 
-header,
 footer {
-  background-color: #dad9cc;
+  background-color: #fff;
 }
 
 header {
+  background-color: #dad9cc;
   display: flex;
   align-items: center;
   border-style: solid;
@@ -60,6 +59,7 @@ header a {
 
 footer {
   padding: 10px;
+  margin-top: 60px;
   display: block;
   justify-content: space-evenly;
   text-align: center;
@@ -91,7 +91,11 @@ h1 {
   color: #0a3641;
   font-size: 24px;
   font-family: "Merriweather Sans", sans-serif;
-  margin: 10px;
+  margin: 45px 10px 10px 15px;
+}
+
+footer h1 {
+  margin-top: 15px;
 }
 
 h2 {
@@ -146,7 +150,7 @@ textarea {
   border-color: #474204;
   position: absolute;
   text-align: center;
-  top: 200px;
+  top: 220px;
   left: 3px;
   right: 3px;
   margin: 5px auto;
@@ -154,7 +158,6 @@ textarea {
   width: 366px;
   height: 37px;
   font-size: 26px;
-  
 }
 
 .homepage__img {
@@ -186,6 +189,10 @@ textarea {
   transition: transform 0.3s ease;
 }
 
+.social_media {
+  margin: 30px;
+}
+
 /*About*/
 
 .about__img {
@@ -197,9 +204,6 @@ textarea {
   height: auto;
   padding-top: 45px;
   padding-bottom: 20px;
-}
-
-.about__img__container {
 }
 
 /*Contact page*/
@@ -237,20 +241,30 @@ textarea {
   padding: 0px;
 }
 
+.sale {
+  height: 18px;
+  width: 60px;
+  border-radius: 3px;
+  z-index: 3;
+  color: white;
+  background-color: #d11557;
+  position: relative;
+  bottom: 29px;
+  left: 2px;
+}
+
 .small-cta {
 }
 
 /*products specific*/
 
 .raincoat_img {
-
-width: 100%;
-height: auto;
-max-height: 80vh;
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
 }
 
 .product_specific_main {
-  
 }
 
 /*purchase Confirmed*/
@@ -309,7 +323,7 @@ max-height: 80vh;
 
   .homepage__img {
     min-height: 100vh;
-    background-size: 80%;
+    background-size: 90%;
     background-position-x: center;
     background-position-y: center;
   }
@@ -323,7 +337,6 @@ max-height: 80vh;
   .products-img-container {
     grid-template-columns: repeat(3, 1fr);
   }
-
 }
 
 @media (max-width: 700px) {
@@ -334,23 +347,31 @@ max-height: 80vh;
   nav li {
     padding: 35px 10px;
   }
-  footer {
+  .main_page_footer {
     display: none;
+  }
+
+  .homepage-cta {
+    top: 470px;
   }
 }
 
 @media (max-width: 400px) {
   textarea {
     width: 268px;
-    height: 27px;
+    height: 25px;
     font-size: 16px;
-    top: 170px;
+    top: 200px;
   }
 
   .logo {
     position: sticky;
     padding: 2px;
     height: 50px;
+  }
+
+  .homepage-cta {
+    top: 470px;
   }
 
   .products-img-container {
@@ -360,5 +381,11 @@ max-height: 80vh;
   .products-img {
     min-height: 555px;
     object-fit: cover;
+  }
+}
+
+@media (max-height: 800px) {
+  .main_page_footer {
+    display: none;
   }
 }
