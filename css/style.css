@@ -306,6 +306,31 @@ textarea {
 .product_specific_main {
 }
 
+/*Check out*/
+
+.products_summary {
+  display: flex;
+  justify-content: space-between;
+}
+
+.products_summary p {
+  margin: 5px;
+}
+
+hr {
+  width: 100%;
+}
+
+.pos_tekst {
+  display: inline-table;
+}
+
+.checkout img {
+  width: 15%;
+  height: auto;
+  float: left;
+}
+
 /*purchase Confirmed*/
 
 .check_container {
@@ -314,22 +339,12 @@ textarea {
   padding: 8px;
   display: inline-flex;
   color: #0a3641;
-
-  align-items: center;
-  text-align: center;
-  align-self: center;
-  justify-content: center;
-  justify-items: center;
+  margin-top: 90px;
 }
 
 .center_icon {
   text-align: center;
 }
-
-/*check out success*/
-
-
-
 
 /*@media*/
 
@@ -382,8 +397,6 @@ textarea {
     grid-template-columns: repeat(3, 1fr);
     gap: 195px 45px;
   }
-
-
 }
 
 @media (max-width: 700px) {
@@ -433,11 +446,9 @@ textarea {
   }
 }
 
-@media (min-width: 1000px){
+@media (min-width: 1000px) {
   .cta_small {
-
     font-size: 16px;
-
   }
 }
 
