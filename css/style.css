@@ -1,26 +1,44 @@
 /*Global*/
 
+body {
+  min-height: 100vh;
+  margin: 0px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+main {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
 nav ul {
   padding: 0px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+nav a:hover {
+  color: black;
+  font-weight: bold;
+}
+
 nav li {
   display: inline-block;
-  padding: 30px;
+  padding: 34px;
   margin-top: 0px;
   margin-bottom: 0px;
   border-width: 1px;
   border-style: solid;
+  border-right: none;
 }
 
-header,
 footer {
-  background-color: #dad9cc;
+  background-color: #fff;
 }
 
 header {
+  background-color: #dad9cc;
   display: flex;
   align-items: center;
   border-style: solid;
@@ -28,15 +46,14 @@ header {
   justify-content: end;
   margin: 0px;
   font-size: 13px;
-  font-family: "Merriweather", "bold", "Sans";
+  font-family: "Merriweather", "bold";
   height: 85px;
 }
 
 header a {
   color: #0a3641;
-  padding: 25px;
+  padding: 26px;
   text-decoration: none;
-  z-index: 2;
   margin-left: 0px;
   margin-right: 0px;
   margin-top: 0px;
@@ -44,25 +61,78 @@ header a {
   justify-content: center;
 }
 
+footer {
+  padding: 10px;
+  margin-top: 60px;
+  display: block;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+footer a {
+  color: #0a3641;
+  padding: 5px;
+  text-decoration: none;
+  z-index: 2;
+  margin: 5px 45px;
+}
+
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0;
+  margin: 0px;
+}
+
+footer li {
+  display: inline-block;
+  padding: 0px;
+}
+
 h1 {
   color: #0a3641;
   font-size: 24px;
   font-family: "Merriweather Sans", sans-serif;
+  margin: 45px 10px 10px 15px;
+}
+
+footer h1 {
+  margin-top: 15px;
+}
+
+h2 {
+  color: #007694;
+  font-size: 18px;
+  font-family: "Quattrocento", "regular", Georgia, "Times New Roman", Times,
+    serif;
+  margin: 12px;
+  padding: 20px;
+}
+
+h1,
+h2,
+p {
+  text-align: center;
+}
+
+p {
+  margin: 5px;
+  font-size: 12px;
+  font-family: "Merriweather", "regular", "Sans";
 }
 
 .cta {
-  background-color: #fff;
+  background: #fff;
   color: #474204;
   font-size: 19px;
   text-transform: uppercase;
   padding: 10px 70px;
+  margin: 30px auto;
   border-radius: 10px;
-  border-style: solid;
-  border-color: black;
-  border-width: 1px;
+  border: 1px solid black;
   text-decoration: none;
-  width: 190px;
-  height: 45px;  
   font-family: "Quattrocento", "Times New Roman", Times, serif;
 }
 
@@ -73,6 +143,39 @@ h1 {
   height: 75px;
 }
 
+.logo:hover {
+  transform: scale(1.04);
+  transition: transform 0.2s ease;
+}
+
+.cta_small {
+  background: #fff;
+  color: #474204;
+  font-size: 9px;
+
+  text-transform: uppercase;
+  padding: 10px 25px;
+  margin: 30px auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: "Quattrocento", "Times New Roman", Times, serif;
+  font-weight: bold;
+  position: relative;
+  bottom: 33px;
+  left: 15px;
+}
+
+.cta_small:hover {
+  transform: scale(1.08);
+  transition: transform 0.3s ease;
+}
+
+.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 /*Home page*/
 
 textarea {
@@ -80,9 +183,9 @@ textarea {
   border-color: #474204;
   position: absolute;
   text-align: center;
-  top: 120px;
-  left: 10px;
-  right: 10px;
+  top: 220px;
+  left: 3px;
+  right: 3px;
   margin: 5px auto;
   padding: 0px;
   width: 366px;
@@ -102,58 +205,377 @@ textarea {
 .slogan {
   position: absolute;
   text-align: center;
-  top: 190px;
+  top: 110px;
   left: 10px;
   right: 10px;
   z-index: 2;
 }
 
 .homepage-cta {
-  position: absolute;
+  position: relative;
   text-align: center;
-  bottom: 90px;
-  left: 55px;
-  right: 55px;
+  top: 480px;
 }
 
-@media (min-width: 800px) {
-    header {
-        display: flex;
-        align-items: center;
-        border-style: solid;
-        border-width: 1px;
-        justify-content: end;   
-        font-size: 26px;
-        font-family: "Merriweather", "bold", "Sans";
-        height: 85px; 
-    }
-
-    nav li {
-        display: inline-block;
-        padding: 16px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        border-width: 1px;
-        border-style: solid;
-      }
-
-      .homepage__img {
-        min-height: 80vh
-      }
-
-
+.homepage-cta:hover {
+  transform: scale(1.08);
+  transition: transform 0.3s ease;
 }
 
-@media (max-width: 700px) {
-    header a {
-        color: #0a3641;
-        padding: 5px;
- 
-      }
-      nav li {
-        padding: 30px 10px;    
-      }
+.social_media {
+  margin: 30px;
+}
 
+.subheader {
+  padding: 0px;
+  margin: 5px;
+  color: #007694;
+  font-size: 18px;
+  font-family: "Quattrocento", "regular", Georgia, "Times New Roman", Times,
+    serif;
+}
+
+.sale {
+  height: 20px;
+  width: 60px;
+  border-radius: 5px;
+  color: white;
+  background-color: #d11557;
+  position: relative;
+  bottom: 34px;
+  left: 5px;
+  overflow: clip;
+  margin-bottom: -25px;
+}
+
+.sale p {
+  font-size: 13px;
+  font-weight: bold;
+  position: relative;
+  top: 2px;
 }
 
 /*About*/
+
+.about__img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: bottom;
+  background-position-y: center;
+  width: 100%;
+  height: auto;
+  padding-top: 45px;
+  padding-bottom: 20px;
+}
+
+/*Contact page*/
+
+.icon-container {
+  text-align: center;
+}
+
+.contact-icons {
+  border-width: 1px;
+  color: #0a3641;
+  padding: 30px;
+  margin: 30px;
+  border: solid 1px black;
+  border-radius: 20%;
+  display: inline-block;
+}
+
+.tekst_spacing {
+  padding: 70px 0px 10px 0px;
+}
+
+/*Products*/
+
+.products-img-container {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 130px 10px;
+  margin: 20px;
+  object-fit: fill;
+  margin-top: 90px;
+  position: relative;
+}
+
+.products-img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 2%;
+}
+
+.products-img:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+.sale {
+  height: 20px;
+  width: 60px;
+  border-radius: 5px;
+  color: white;
+  background-color: #d11557;
+  position: relative;
+  bottom: 34px;
+  left: 5px;
+  overflow: clip;
+  margin-bottom: -25px;
+}
+
+.sale p {
+  font-size: 13px;
+  font-weight: bold;
+  position: relative;
+  top: 2px;
+}
+
+.product_description {
+  display: flex;
+}
+
+.old_price {
+  text-decoration: line-through;
+}
+
+.new_price {
+  color: #d11557;
+}
+
+/*products specific*/
+
+.raincoat_img {
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+}
+
+.product_specific_cta {
+  text-align: center;
+  position: relative;
+  top: 25px;
+  right: 15px;
+  padding: 10px 20px;
+}
+
+.price_tags {
+  font-size: 22px;
+  padding: 5px;
+}
+
+/*Check out*/
+
+.products_summary {
+  display: flex;
+  justify-content: space-between;
+}
+
+.products_summary_amount {
+  padding-left: 260px;
+}
+
+hr {
+  width: 100%;
+  height: 2px;
+  background-color: #0a3641;
+}
+
+.pos_tekst {
+  display: inline-flex;
+}
+
+.checkout img {
+  width: 15%;
+  height: auto;
+  float: left;
+  padding: 0px 10px 10px 2px;
+}
+
+.checkout-cta {
+  position: flex;
+  max-width: 190px;
+  text-align: center;
+  top: 480px;
+}
+
+.checkout-cta p {
+  text-decoration: none;
+}
+
+/*purchase Confirmed*/
+
+.check_container {
+  border: solid 1px;
+  border-radius: 50%;
+  padding: 8px;
+  display: inline-flex;
+  color: #0a3641;
+  margin-top: 90px;
+}
+
+.center_icon {
+  text-align: center;
+}
+
+.purchase {
+  width: 20%;
+  display: block;
+  
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+/*@media*/
+
+@media (min-width: 800px) {
+  header {
+    display: flex;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    justify-content: end;
+    font-size: 26px;
+    font-family: "Merriweather", "bold" "Sans";
+    height: 85px;
+  }
+
+  h1 {
+    font-size: 44px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  nav li {
+    display: inline-block;
+    padding: 26px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-style: 1px, solid;
+  }
+
+  .homepage__img {
+    min-height: 100vh;
+    background-size: 90%;
+    background-position-x: center;
+    background-position-y: center;
+  }
+
+  .about__img {
+    background-size: 80%;
+    background-position-x: center;
+    background-position-y: center;
+  }
+
+  .products-img-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 195px 45px;
+  }
+
+  .raincoat_img {
+    width: auto;
+    height: auto;
+    max-height: 80vh;
+    padding: 25px;
+    float: left;
+  }
+
+  .product_specific_tekst {
+    text-align: left;
+    padding-bottom: 15px;
+  }
+
+  .sale_product_specific {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  header a {
+    color: #0a3641;
+    padding: 5px;
+  }
+
+  nav li {
+    padding: 34px 10px;
+  }
+
+  .main_page_footer {
+    display: none;
+  }
+
+  .homepage-cta {
+    top: 470px;
+  }
+
+  .products_summary_amount {
+    padding-left: 150px;
+  }
+}
+
+@media (max-width: 400px) {
+  textarea {
+    width: 255px;
+    height: 25px;
+    font-size: 16px;
+    top: 215px;
+  }
+
+  .logo {
+    position: sticky;
+    padding: 2px;
+    height: 50px;
+  }
+
+  .homepage-cta {
+    top: 380px;
+  }
+
+  .products-img {
+    min-height: 555px;
+    object-fit: cover;
+  }
+
+  nav li {
+    padding: 34px 10px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .cta_small {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .products-img-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .products_summary_amount {
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 800px) {
+  .products_summary_amount {
+    padding-left: 150px;
+  }
+}
+
+@media (max-height: 800px) {
+  .main_page_footer {
+    display: none;
+  }
+}
