@@ -166,6 +166,11 @@ p {
   left: 15px;
 }
 
+.cta_small:hover {
+  transform: scale(1.08);
+  transition: transform 0.3s ease;
+}
+
 .active {
   text-decoration: underline;
   font-weight: bold;
@@ -213,7 +218,7 @@ textarea {
 }
 
 .homepage-cta:hover {
-  transform: scale(1.1);
+  transform: scale(1.08);
   transition: transform 0.3s ease;
 }
 
@@ -250,7 +255,6 @@ textarea {
   top: 2px;
 }
 
-
 /*About*/
 
 .about__img {
@@ -283,7 +287,6 @@ textarea {
 .tekst_spacing {
   padding: 70px 0px 10px 0px;
 }
-
 
 /*Products*/
 
@@ -358,7 +361,6 @@ textarea {
   top: 25px;
   right: 15px;
   padding: 10px 20px;
-
 }
 
 .price_tags {
@@ -394,6 +396,17 @@ hr {
   padding: 0px 10px 10px 2px;
 }
 
+.checkout-cta {
+  position: flex;
+  max-width: 190px;
+  text-align: center;
+  top: 480px;
+}
+
+.checkout-cta p {
+  text-decoration: none;
+}
+
 /*purchase Confirmed*/
 
 .check_container {
@@ -407,6 +420,15 @@ hr {
 
 .center_icon {
   text-align: center;
+}
+
+.purchase {
+  width: 20%;
+  display: block;
+  
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 /*@media*/
@@ -467,7 +489,6 @@ hr {
     max-height: 80vh;
     padding: 25px;
     float: left;
-    
   }
 
   .product_specific_tekst {
@@ -475,14 +496,9 @@ hr {
     padding-bottom: 15px;
   }
 
-  .product_specific_selling_points {
-    
-  }
-
-
-  .sale_product_specific {   
+  .sale_product_specific {
     display: none;
-
+  }
 }
 
 @media (max-width: 700px) {
