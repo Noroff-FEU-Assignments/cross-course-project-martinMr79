@@ -18,6 +18,11 @@ nav ul {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+nav a:hover {
+  color: black;
+  font-weight: bold;
+}
+
 nav li {
   display: inline-block;
   padding: 34px;
@@ -49,7 +54,6 @@ header a {
   color: #0a3641;
   padding: 26px;
   text-decoration: none;
-  z-index: 2;
   margin-left: 0px;
   margin-right: 0px;
   margin-top: 0px;
@@ -139,6 +143,11 @@ p {
   height: 75px;
 }
 
+.logo:hover {
+  transform: scale(1.04);
+  transition: transform 0.2s ease;
+}
+
 .cta_small {
   background: #fff;
   color: #474204;
@@ -155,6 +164,11 @@ p {
   position: relative;
   bottom: 33px;
   left: 15px;
+}
+
+.active {
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 /*Home page*/
@@ -195,7 +209,7 @@ textarea {
 .homepage-cta {
   position: relative;
   text-align: center;
-  top: 280px;
+  top: 480px;
 }
 
 .homepage-cta:hover {
@@ -206,6 +220,36 @@ textarea {
 .social_media {
   margin: 30px;
 }
+
+.subheader {
+  padding: 0px;
+  margin: 5px;
+  color: #007694;
+  font-size: 18px;
+  font-family: "Quattrocento", "regular", Georgia, "Times New Roman", Times,
+    serif;
+}
+
+.sale {
+  height: 20px;
+  width: 60px;
+  border-radius: 5px;
+  color: white;
+  background-color: #d11557;
+  position: relative;
+  bottom: 34px;
+  left: 5px;
+  overflow: clip;
+  margin-bottom: -25px;
+}
+
+.sale p {
+  font-size: 13px;
+  font-weight: bold;
+  position: relative;
+  top: 2px;
+}
+
 
 /*About*/
 
@@ -235,6 +279,11 @@ textarea {
   border-radius: 20%;
   display: inline-block;
 }
+
+.tekst_spacing {
+  padding: 70px 0px 10px 0px;
+}
+
 
 /*Products*/
 
@@ -303,7 +352,18 @@ textarea {
   max-height: 80vh;
 }
 
-.product_specific_main {
+.product_specific_cta {
+  text-align: center;
+  position: relative;
+  top: 25px;
+  right: 15px;
+  padding: 10px 20px;
+
+}
+
+.price_tags {
+  font-size: 22px;
+  padding: 5px;
 }
 
 /*Check out*/
@@ -313,22 +373,25 @@ textarea {
   justify-content: space-between;
 }
 
-.products_summary p {
-  margin: 5px;
+.products_summary_amount {
+  padding-left: 260px;
 }
 
 hr {
   width: 100%;
+  height: 2px;
+  background-color: #0a3641;
 }
 
 .pos_tekst {
-  display: inline-table;
+  display: inline-flex;
 }
 
 .checkout img {
   width: 15%;
   height: auto;
   float: left;
+  padding: 0px 10px 10px 2px;
 }
 
 /*purchase Confirmed*/
@@ -397,6 +460,29 @@ hr {
     grid-template-columns: repeat(3, 1fr);
     gap: 195px 45px;
   }
+
+  .raincoat_img {
+    width: auto;
+    height: auto;
+    max-height: 80vh;
+    padding: 25px;
+    float: left;
+    
+  }
+
+  .product_specific_tekst {
+    text-align: left;
+    padding-bottom: 15px;
+  }
+
+  .product_specific_selling_points {
+    
+  }
+
+
+  .sale_product_specific {   
+    display: none;
+
 }
 
 @media (max-width: 700px) {
@@ -416,14 +502,18 @@ hr {
   .homepage-cta {
     top: 470px;
   }
+
+  .products_summary_amount {
+    padding-left: 150px;
+  }
 }
 
 @media (max-width: 400px) {
   textarea {
-    width: 268px;
+    width: 255px;
     height: 25px;
     font-size: 16px;
-    top: 200px;
+    top: 215px;
   }
 
   .logo {
@@ -433,7 +523,7 @@ hr {
   }
 
   .homepage-cta {
-    top: 470px;
+    top: 380px;
   }
 
   .products-img {
@@ -455,6 +545,16 @@ hr {
 @media (max-width: 500px) {
   .products-img-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .products_summary_amount {
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 800px) {
+  .products_summary_amount {
+    padding-left: 150px;
   }
 }
 
