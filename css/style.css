@@ -542,7 +542,7 @@ hr {
   }
 
   .products-img {
-    min-height: 65%;
+    height: 75%;
     object-fit: cover;
   }
 
