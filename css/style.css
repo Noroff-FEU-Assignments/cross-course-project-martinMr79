@@ -541,10 +541,7 @@ hr {
     top: 380px;
   }
 
-  .products-img {
-    min-height: 555px;
-    object-fit: cover;
-  }
+
 
   nav li {
     padding: 34px 10px;
