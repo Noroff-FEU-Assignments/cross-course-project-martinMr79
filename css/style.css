@@ -308,10 +308,12 @@ textarea {
   margin: 0px;
   padding: 0px;
   border-radius: 2%;
+  transform: scale(1);
+  transition: transform 0.3s ease;
 }
 
 .products-img:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
   transition: transform 0.3s ease;
 }
 
