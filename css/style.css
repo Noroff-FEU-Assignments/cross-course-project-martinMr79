@@ -141,6 +141,7 @@ p {
   right: 2900px;
   padding: 5px;
   height: 75px;
+  transition: transform 0.2s ease;
 }
 
 .logo:hover {
@@ -164,6 +165,7 @@ p {
   position: relative;
   bottom: 33px;
   left: 15px;
+  transition: transform 0.3s ease;
 }
 
 .cta_small:hover {
@@ -215,6 +217,7 @@ textarea {
   position: relative;
   text-align: center;
   top: 480px;
+  transition: transform 0.3s ease;
 }
 
 .homepage-cta:hover {
@@ -308,7 +311,6 @@ textarea {
   margin: 0px;
   padding: 0px;
   border-radius: 2%;
-  transform: scale(1);
   transition: transform 0.3s ease;
 }
 
