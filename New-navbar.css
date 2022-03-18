@@ -1,0 +1,20 @@
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #dad9cc;
+    display: flex;
+    
+}
+  nav ul {
+      display: flex;
+      gap: 70px; 
+      list-style: none;
+  }
+
+  header a { 
+    text-decoration: none;
+
+  }
