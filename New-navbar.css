@@ -1,20 +1,72 @@
-
 body {
-    margin: 0;
+  margin: 0;
 }
 
 header {
-    background-color: #dad9cc;
-    display: flex;
-    
+  background-color: #dad9cc;
+  padding: 10px;
+  font-family: "Merriweather", "bold";
 }
-  nav ul {
-      display: flex;
-      gap: 70px; 
-      list-style: none;
-  }
 
-  header a { 
-    text-decoration: none;
+.navbar_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  }
+nav ul {
+  display: flex;
+  gap: 75px;
+  list-style: none;
+}
+
+header a {
+  text-decoration: none;
+  padding: 5px;
+  color: #0a3641;
+  border-radius: 50%;
+}
+
+.navbar {
+  display: flex;
+  
+}
+
+.navbar a:hover {
+  background-color: #0a3641;
+  color: white;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.logo {
+  height: 75px;
+}
+
+.hamburger-menu {
+  display: inline;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.5s;
+  color: #0a3641;
+  margin: 0px 50px 0px 40px 
+ }
+
+
+.hamburger-menu:hover {
+  background-color: #0a3641;
+  color: white;
+}
+
+.cart {
+  display: inline;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.5s;
+  color: #0a3641;
+}
+
+.cart:hover a {
+  background-color: #0a3641;
+  color: white;
+}
