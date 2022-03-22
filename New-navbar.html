@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Under construction</title>
     <link rel="stylesheet" href="New-navbar.css" />
     <link rel="icon" href="images/umbrella-solid.svg" type="image/icon type" />
+
     <script
       src="https://kit.fontawesome.com/bbebfafa64.js"
       crossorigin="anonymous"
     ></script>
+
+    >
   </head>
   <body>
     <header>
@@ -21,26 +24,28 @@
           >
         </div>
         <nav class="navbar">
-          <ul>
-            <li class="active"><a href="contact.html">Women</a></li>
-            <li class="active"><a href="contact.html">Men</a></li>
-            <li class="active"><a href="contact.html">Kids</a></li>
-            <li class="active"><a href="contact.html">Sale</a></li>
-            <li><a href="about.html">About</a></li>
-            <li class="active"><a href="contact.html">Contact</a></li>
+          <ul class="menu">
+            <li class="menu-item"><a href="contact.html">Women</a></li>
+            <li class="menu-item"><a href="contact.html">Men</a></li>
+            <li class="menu-item"><a href="contact.html">Kids</a></li>
+            <li class="menu-item"><a href="contact.html">Sale</a></li>
+            <li class="menu-item"><a href="about.html">About</a></li>
+            <li class="menu-item"><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
         <div class="navbar_icons_container">
-
           <div class="cart">
             <a href="check_out.html"
               ><i class="fas fa-cart-arrow-down fa-lg"></i
             ></a>
-            
           </div>
-          <div class="hamburger-menu"><i class="fas fa-bars"></i></div>
+          <button class="hamburger-menu">
+            <i class="fas fa-bars menu-icon">menu</i>
+            <i class="fa-solid fa-circle-xmark close-icon">close</i>
+          </button>
         </div>
       </div>
     </header>
+    <script src="js/navbar.js"></script>
   </body>
 </html>
