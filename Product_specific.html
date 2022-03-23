@@ -7,6 +7,7 @@
     <meta name="description" content="Our premium raincoat" />
     <title>Rainydays | Premium raincoat</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/New-navbar.css">
     <link rel="icon" href="images/umbrella-solid.svg" type="image/icon type">
     <script
       src="https://kit.fontawesome.com/bbebfafa64.js"
@@ -29,20 +30,39 @@
   </head>
   <body>
     <header>
-      <div class="logo">
-        <a href="index.html"><img src= images/logo_v2.png class="logo"></a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li>
-            <a href="Check_out.html"
-              ><span class="fas fa-cart-arrow-down fa-lg"></span
+      <div class="navbar_container">
+        <div class="logo">
+          <a href="index.html"
+            ><img src= images/logo_v2.png class="logo" alt="Company logo"></a
+          >
+        </div>
+        <nav class="navbar">
+          <ul class="menu">
+            <li><a class="menu-item" href="contact.html">Women</a></li>
+            <li><a class="menu-item" href="contact.html">Men</a></li>
+            <li><a class="menu-item" href="contact.html">Kids</a></li>
+            <li><a class="menu-item" href="contact.html">Sale</a></li>
+            <li><a class="menu-item" href="about.html">About</a></li>
+            <li><a class="menu-item" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div>
+          <div class="cart">
+            <a href="check_out.html"
+              ><i class="fas fa-cart-arrow-down fa-lg"></i
             ></a>
-          </li>
-        </ul>
-      </nav>
+          </div>
+
+          <button class="hamburger-menu">
+            <div class="menu-icon">
+              <i class="fas fa-bars"> menu</i>
+            </div>
+            <div class="close-icon">
+              <i class="fa-solid fa-circle-xmark"> close</i>
+            </div>
+          </button>
+        </div>
+      </div>
     </header>
     <main>
       <div>
@@ -75,5 +95,6 @@
       </div>
     </main>
     <footer>Copyright &copy;</footer>
+    <script src="js/navbar.js"></script>
   </body>
 </html>
