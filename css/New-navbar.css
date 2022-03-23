@@ -1,6 +1,4 @@
-body {
-  margin: 0;
-}
+
 
 header {
   background-color: #dad9cc;
@@ -32,9 +30,6 @@ header a {
 .navbar {
   display: flex;
   align-items: center;
-  /*
-  display: none;
-  */
 }
 
 .navbar a:hover {

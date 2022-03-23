@@ -12,55 +12,10 @@ main {
   margin: 0 auto;
 }
 
-nav ul {
-  padding: 0px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-nav a:hover {
-  color: black;
-  font-weight: bold;
-}
-
-nav li {
-  display: inline-block;
-  padding: 34px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  border-width: 1px;
-  border-style: solid;
-  border-right: none;
-}
-
 footer {
   background-color: #fff;
 }
 
-header {
-  background-color: #dad9cc;
-  display: flex;
-  align-items: center;
-  border-style: solid;
-  border-width: 1px;
-  justify-content: end;
-  margin: 0px;
-  font-size: 13px;
-  font-family: "Merriweather", "bold";
-  height: 85px;
-}
-
-header a {
-  color: #0a3641;
-  padding: 26px;
-  text-decoration: none;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
-  margin-bottom: auto;
-  justify-content: center;
-  font-size: 13px;
-}
 
 footer {
   padding: 10px;
@@ -137,24 +92,12 @@ p {
   font-family: "Quattrocento", "Times New Roman", Times, serif;
 }
 
-.logo {
-  position: sticky;
-  right: 2900px;
-  padding: 5px;
-  height: 75px;
-  transition: transform 0.2s ease;
-}
 
-.logo:hover {
-  transform: scale(1.04);
-  transition: transform 0.2s ease;
-}
 
 .cta_small {
   background: #fff;
   color: #474204;
   font-size: 9px;
-
   text-transform: uppercase;
   padding: 10px 25px;
   margin: 30px auto;
@@ -438,16 +381,7 @@ hr {
 /*@media*/
 
 @media (min-width: 800px) {
-  header {
-    display: flex;
-    align-items: center;
-    border-style: solid;
-    border-width: 1px;
-    justify-content: end;
-    font-size: 26px;
-    font-family: "Merriweather", "bold" "Sans";
-    height: 85px;
-  }
+
 
   h1 {
     font-size: 44px;
@@ -459,14 +393,6 @@ hr {
 
   p {
     font-size: 16px;
-  }
-
-  nav li {
-    display: inline-block;
-    padding: 26px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    border-style: 1px, solid;
   }
 
   .homepage__img {
@@ -506,14 +432,6 @@ hr {
 }
 
 @media (max-width: 700px) {
-  header a {
-    color: #0a3641;
-    padding: 5px;
-  }
-
-  nav li {
-    padding: 34px 10px;
-  }
 
   .main_page_footer {
     display: none;
@@ -536,12 +454,6 @@ hr {
     top: 215px;
   }
 
-  .logo {
-    position: sticky;
-    padding: 2px;
-    height: 50px;
-  }
-
   .homepage-cta {
     top: 380px;
   }
@@ -551,9 +463,6 @@ hr {
     object-fit: cover;
   }
 
-  nav li {
-    padding: 34px 10px;
-  }
 }
 
 @media (min-width: 1000px) {
