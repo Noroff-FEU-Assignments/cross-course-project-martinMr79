@@ -49,6 +49,3 @@ const productArray = [
 export {productArray}
 
 
-
-/*inspired by*/
-/*https://m.youtube.com/watch?v=dYRgB-0xvdw*/
