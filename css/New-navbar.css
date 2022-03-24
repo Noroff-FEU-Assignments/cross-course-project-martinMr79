@@ -78,7 +78,10 @@ header a {
 }
 
 .menu {
+  
   display: none;
+
+
 }
 
 button {
@@ -92,7 +95,9 @@ button {
   }
 
   .menu {
+    transition: 1s;
     display: flex;
+
   }
 }
 
@@ -107,6 +112,7 @@ button {
   }
 
   .show-menu {
+   
     display: flex;
     min-width: 100%;
     z-index: 499;
