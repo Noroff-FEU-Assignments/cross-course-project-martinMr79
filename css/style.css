@@ -18,11 +18,12 @@ footer {
 
 
 footer {
-  padding: 10px;
+  padding: 90px 0px 50px 0px;
   margin-top: 60px;
   display: block;
   justify-content: space-evenly;
   text-align: center;
+  
 }
 
 footer a {
