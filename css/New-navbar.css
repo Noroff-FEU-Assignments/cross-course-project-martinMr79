@@ -4,10 +4,14 @@ header {
   background-color: #dad9cc;
   padding: 10px;
   font-family: "Merriweather", "bold";
+  position: fixed;
+  width: 100%;
+  z-index: 5;
 }
 
 .navbar_container {
   display: flex;
+  
   justify-content: space-between;
   align-items: center;
   width: 100%;
