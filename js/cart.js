@@ -12,6 +12,7 @@ cartItems.forEach(function(cartElement) {
     <h4>${cartElement.name}</h4>
     <img src="${cartElement.image}" alt=${cartElement.name}" class="cart-image">
     </div>
+    <p class =>${cartElement.price}</p>
     `
 
 });
