@@ -37,7 +37,7 @@ addToCartButtons.forEach(function (button) {
 
 
 function showCart(cartItems) {
-    cart.style.display = "flex"; 
+    cart.style.display = "relative"; 
     cartList.innerHTML = "";
     let total = 0;
     cartItems.forEach(function(cartElement){
