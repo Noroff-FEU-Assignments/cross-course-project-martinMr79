@@ -1,5 +1,8 @@
 import { productArray } from "./productsList.js";
 const productsContainer = document.querySelector(".products-img-container");
+const cart = document.querySelector(".products-img-container");
+const cartList = document.querySelector(".cart-list");
+const totalContainer = document.querySelector(".total");
 let cartArray = [];
 
 
@@ -11,7 +14,7 @@ productArray.forEach(function (product) {
       src="${product.image}"
       alt="${product.name}"
       class="products-img"
-  /></a>
+  </img></a>
         <h3>${product.name}</h3>
         <div class="product_description">
         <p class="product-price">${product.price},-</p>
@@ -24,11 +27,31 @@ productArray.forEach(function (product) {
 const addToCartButtons = document.querySelectorAll("button");
 addToCartButtons.forEach(function (button) {
   button.onclick = function (event) {
-   // cartArray.push(event.target.dataset.product);
+
     const itemToAdd = productArray.find(item => item.id == event.target.dataset.product);
-    console.log(itemToAdd);
+    cartArray.push(itemToAdd);
+    showCart(cartArray);
+    localStorage.setItem("cartList", JSON.stringify(cartArray));
   };
 });
+
+
+function showCart(cartItems) {
+    cart.style.display = "flex"; 
+    cartList.innerHTML = "";
+    let total = 0;
+    cartItems.forEach(function(cartElement){
+        total += cartElement.price; 
+        cartList.innerHTML += 
+        `<div class="cart-item">
+        <h4>${cartElement.name}</h4>
+        <img src="${cartElement.image}" alt=${cartElement.name}" class="cart-image">
+        </div>
+        `
+    })
+    totalContainer.innerHTML = `Total: ${total}`
+    
+}
 
 /*inspired by*/
 /*https://m.youtube.com/watch?v=dYRgB-0xvdw*/
