@@ -59,15 +59,15 @@
             >Card Number
             <input name="name" id="name" />
           </label>
-          <div class="form-error" id="nameError">Name is required</div>
+          <div class="form-error" id="cardError">Please enter a valid card number</div>
         </div>
 
         <div>
           <label
             >Card Expiration
-            <input name="subject" id="subject" />
+            <input name="cardExpiration" id="cardExpiration" />
           </label>
-          <div class="form-error" id="subjectError">We need more details</div>
+          <div class="form-error" id="expirationError">Please enter expiry date</div>
         </div>
 
         <div>
@@ -80,11 +80,10 @@
           </div>
         </div>
 
-        <button disabled>submit</button>
+        <button class="submit_button">submit</button>
       </form>
       <a href="index.html"><< back to main page</a>
     </main>
-    <footer><span>Copyright &copy;</span></footer>
     <script src="js/navbar.js"></script>
     <script src="js/validateCard.js"></script>
   </body>
