@@ -3,12 +3,11 @@ const nameInput = document.querySelector("#name");
 const cardError = document.querySelector("#cardError");
 const cardExpiration = document.querySelector("#cardExpiration");
 const expirationError = document.querySelector("#expirationError");
-const email = document.querySelector("#email");
-const emailError = document.querySelector("#emailError");
-const adressError = document.querySelector("#adressError");
+const cvc = document.querySelector("#cvc");
+const cvcError = document.querySelector("#cvcError");
 const validForm = document.querySelector(".validForm");
 const message = document.querySelector(".message");
-const button = document.querySelector("button");
+const button = document.querySelector(".submit_button");
 
 function validateForm(event) {
   event.preventDefault();
@@ -25,10 +24,10 @@ function validateForm(event) {
     expirationError.style.display = "block";
   }
 
-  if (validateEmail(email.value) === true && email.value.trim().length > 5) {
-    emailError.style.display = "none";
+  if (validateCvc(cvc.value) === true && cvc.value.trim().length > 5) {
+    cvcError.style.display = "none";
   } else {
-    emailError.style.display = "block";
+    cvcError.style.display = "block";
   }
 
   console.log("hekk");
@@ -39,7 +38,7 @@ function checkIfButtonIsDisabled() {
   if (
     checkLength(nameInput.value, 1) &&
     checkLength(cardExpiration.value, 10) &&
-    validateEmail(email.value, 5)
+    validateCvc(cvc.value, 5)
   ) {
     button.disabled = false;
   } else {
@@ -53,9 +52,9 @@ function checkIfButtonIsDisabled() {
 nameInput.addEventListener("keyup", checkIfButtonIsDisabled);
 cardExpiration.addEventListener("keyup", checkIfButtonIsDisabled);
 
-function validateEmail(email) {
+function validateCvc(cvc) {
   const regEx = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/;
-  const matchPattern = regEx.test(email);
+  const matchPattern = regEx.test(cvc);
   return matchPattern;
 }
 

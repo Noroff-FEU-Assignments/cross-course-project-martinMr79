@@ -9,6 +9,7 @@ body {
     max-width: 940px;
     margin: 0 auto;
     padding-top: 60px;
+
   }
 
 .form-error {
@@ -27,7 +28,7 @@ body {
     width: 100%;
     margin-top: 2px;
     padding: 10px;
-    font-size: 19px;
+    font-size: 19px;;
   }
   
   form {
@@ -37,7 +38,10 @@ body {
   }
   
   .submit_button {
-    background-color: blue;
+    background-color: #0a3641;
+    text-decoration: none;
+    position: relative;
+    top: 50px;
     border: none;
     width: 200px;
     padding: 1rem;
@@ -46,17 +50,23 @@ body {
     cursor: pointer;
     border-radius: 0.2rem;
   }
+
   
   .submit_button:disabled {
     background-color: rgb(171, 198, 209);
   }
   
   .message {
-    background: rgb(33, 33, 192);
     padding: 1rem;
     color: white;
     border-radius: 1rem;
     margin-bottom: 1rem;
     text-align: center;
     font-size: 1.9rem;
+  }
+
+  .back_link {
+      position: relative;
+      top: 70px;
+      left: 25px
   }
