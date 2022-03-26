@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/Credcard validation.css" />
+    <link rel="stylesheet" href="css/New-navbar.css" />
+
+    <link rel="icon" href="images/umbrella-solid.svg" type="image/icon type" />
+    <script
+      src="https://kit.fontawesome.com/bbebfafa64.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Validate your card</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar_container">
+        <div class="logo">
+          <a href="index.html"
+            ><img src= images/logo_v2.png class="logo" alt="Company logo"></a
+          >
+        </div>
+        <nav class="navbar">
+          <ul class="menu">
+            <li><a class="menu-item" href="products.html">Women</a></li>
+            <li><a class="menu-item" href="products.html">Men</a></li>
+            <li><a class="menu-item" href="products.html">Kids</a></li>
+            <li><a class="menu-item" href="products.html">Sale</a></li>
+            <li><a class="menu-item" href="about.html">About</a></li>
+            <li><a class="menu-item" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div>
+          <div class="cart">
+            <a href="check_out.html"
+              ><i class="fas fa-cart-arrow-down fa-lg"></i
+            ></a>
+          </div>
+
+          <button class="hamburger-menu">
+            <div class="menu-icon">
+              <i class="fas fa-bars"> menu</i>
+            </div>
+            <div class="close-icon">
+              <i class="fa-solid fa-circle-xmark"> close</i>
+            </div>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="message"></div>
+    <div class="validform"></div>
+    <main class="container">
+      <form id="contactForm">
+        <div>
+          <label
+            >Card Number
+            <input name="name" id="name" />
+          </label>
+          <div class="form-error" id="nameError">Name is required</div>
+        </div>
+
+        <div>
+          <label
+            >Card Expiration
+            <input name="subject" id="subject" />
+          </label>
+          <div class="form-error" id="subjectError">We need more details</div>
+        </div>
+
+        <div>
+          <label>
+            Card CVC
+            <input name="email" id="email" />
+          </label>
+          <div class="form-error" id="emailError">
+            Please enter a valid email address
+          </div>
+        </div>
+
+        <button disabled>submit</button>
+      </form>
+      <a href="index.html"><< back to main page</a>
+    </main>
+    <footer><span>Copyright &copy;</span></footer>
+    <script src="js/navbar.js"></script>
+    <script src="js/validateCard.js"></script>
+  </body>
+</html>
