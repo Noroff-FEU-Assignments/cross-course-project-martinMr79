@@ -1,5 +1,5 @@
 const form = document.querySelector("#contactForm");
-const nameInput = document.querySelector("#name");
+const cardNumber = document.querySelector("#cardNumber");
 const cardError = document.querySelector("#cardError");
 const cardExpiration = document.querySelector("#cardExpiration");
 const expirationError = document.querySelector("#expirationError");
@@ -12,7 +12,7 @@ const button = document.querySelector(".submit_button");
 function validateForm(event) {
   event.preventDefault();
 
-  if (nameInput.value.trim().length > 0) {
+  if (cardNumber.value.trim().length > 0) {
     cardError.style.display = "none";
   } else {
     cardError.style.display = "block";
@@ -49,7 +49,7 @@ function checkIfButtonIsDisabled() {
 
 
 
-nameInput.addEventListener("keyup", checkIfButtonIsDisabled);
+cardNumber.addEventListener("keyup", checkIfButtonIsDisabled);
 cardExpiration.addEventListener("keyup", checkIfButtonIsDisabled);
 
 function validateCvc(cvc) {
