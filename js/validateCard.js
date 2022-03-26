@@ -53,7 +53,12 @@ cardNumber.addEventListener("keyup", checkIfButtonIsDisabled);
 cardExpiration.addEventListener("keyup", checkIfButtonIsDisabled);
 
 function validateCvc(cvc) {
-  const regEx = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/;
+  const regEx = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/;       
+/;
+
+ /*regex from: */
+ /*https://www.regular-expressions.info/creditcard.html*/
+
   const matchPattern = regEx.test(cvc);
   return matchPattern;
 }
