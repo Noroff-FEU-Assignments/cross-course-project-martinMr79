@@ -17,11 +17,10 @@ main {
 footer {
   padding: 90px 0px 50px 0px;
   margin-top: 60px;
-  display: block;
   justify-content: space-evenly;
   text-align: center;
   background-color: #fff;
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
 }
@@ -319,16 +318,7 @@ textarea {
   color: #d11557;
 }
 
-.products_footer {
-  padding: 90px 0px 50px 0px;
-  margin-top: 60px;
-  justify-content: space-evenly;
-  text-align: center;
-  background-color: #fff;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
+
 
 /*products specific*/
 
