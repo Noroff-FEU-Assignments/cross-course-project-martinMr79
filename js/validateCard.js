@@ -5,9 +5,6 @@ const cardExpiration = document.querySelector("#cardExpiration");
 const expirationError = document.querySelector("#expirationError");
 const cvc = document.querySelector("#cvc");
 const cvcError = document.querySelector("#cvcError");
-/*const validForm = document.querySelector(".validForm");
-const message = document.querySelector(".message");
-const button = document.querySelector(".submit_button");*/
 
 function validateForm(event) {
   event.preventDefault();
@@ -18,13 +15,13 @@ if(checkLength(cardNumber.value, 10) === true) {
   cardError.style.display = "block";
 }
 
-  if (cardExpiration.value.trim().length > 0) {
+  if (cardExpiration.value.trim().length > 4) {
     expirationError.style.display = "none";
   } else {
     expirationError.style.display = "block";
   }
 
-  if (cvc.value.trim().length > 0) {
+  if (cvc.value.trim().length > 3) {
     cvcError.style.display = "none";
   } else {
     cvcError.style.display = "block";
@@ -44,22 +41,6 @@ function validateCardNumber(cardNumber) {
 
 /*regex from: */
 /*https://stackoverflow.com/questions/56896462/regex-to-match-master-visa-card-with-spaces-in-javascript*/
-
-
-
-
-function checkIfButtonIsDisabled() {
-  if (
-    checkLength(cardNumber.value, 10) &&
-    checkLength(cardExpiration.value, 3) &&
-    validateCvc(cvc.value, 4)
-  ) {
-    submit_button.style = false;
-  } else {
-    
-    submit_button.disabled = true;
-  }
-}
 
 
 
