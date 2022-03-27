@@ -46,10 +46,11 @@ function showCart(cartItems) {
         `<div class="cart-item">
         <h4>${cartElement.name}</h4>
         <img src="${cartElement.image}" alt=${cartElement.name}" class="cart-image">
+        <div class="checkout_price">Price: ${cartElement.price}</div>
         </div>
         `
     })
-    totalContainer.innerHTML = `Total: ${total}`
+    totalContainer.innerHTML = `Total: ${total},-`
     
 }
 
