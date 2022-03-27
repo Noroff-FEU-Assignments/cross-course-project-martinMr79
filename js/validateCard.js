@@ -5,12 +5,14 @@ const cardExpiration = document.querySelector("#cardExpiration");
 const expirationError = document.querySelector("#expirationError");
 const cvc = document.querySelector("#cvc");
 const cvcError = document.querySelector("#cvcError");
-const validForm = document.querySelector(".validForm");
+/*const validForm = document.querySelector(".validForm");
 const message = document.querySelector(".message");
-const button = document.querySelector(".submit_button");
+const button = document.querySelector(".submit_button");*/
 
 function validateForm(event) {
   event.preventDefault();
+
+/*
 
   if (cardNumber.value.trim().length > 0) {
     cardError.style.display = "none";
@@ -18,13 +20,21 @@ function validateForm(event) {
     cardError.style.display = "block";
   }
 
-  if (cardExpiration.value.trim().length > 9) {
+*/
+
+if(checkLength(cardNumber.value, 10) === true) {
+    cardError.style.display = "none";
+} else {
+  cardError.style.display = "block";
+}
+
+  if (cardExpiration.value.trim().length > 0) {
     expirationError.style.display = "none";
   } else {
     expirationError.style.display = "block";
   }
 
-  if (validateCvc(cvc.value) === true && cvc.value.trim().length > 5) {
+  if (cvc.value.trim().length > 0) {
     cvcError.style.display = "none";
   } else {
     cvcError.style.display = "block";
@@ -33,32 +43,43 @@ function validateForm(event) {
   console.log("hekk");
 }
 
-function checkIfButtonIsDisabled() {
-  if (
-    checkLength(cardNumber.value, 1) &&
-    checkLength(cardExpiration.value, 1) &&
-    validateCvc(cvc.value, 1)
-  ) {
-    button.disabled = false;
-  } else {
-    message.innerHTML = "";
-    button.disabled = true;
-  }
-}
-
-cardNumber.addEventListener("keyup", checkIfButtonIsDisabled);
-cardExpiration.addEventListener("keyup", checkIfButtonIsDisabled);
+form.addEventListener("submit", validateForm);
 
 function validateCardNumber(cardNumber) {
-  const regEx = /^(?:4[0-9]d{12}(?:[0-9]d{3})?|(?:5[1-5][0-9]{2}|222[1-9]|22[3-9][0-9]|2[3-6][0-9]{2}|27[01][0-9]|2720)[0-9]{d12})$/;
-    
-
-  /*regex from: */
-  /*https://stackoverflow.com/questions/56896462/regex-to-match-master-visa-card-with-spaces-in-javascript*/
-
+  const regEx =
+    /^(?:4[0-9]d{12}(?:[0-9]d{3})?|(?:5[1-5][0-9]{2}|222[1-9]|22[3-9][0-9]|2[3-6][0-9]{2}|27[01][0-9]|2720)[0-9]{d12})$/;
   const matchPattern = regEx.test(cardNumber);
   return matchPattern;
 }
+
+/*regex from: */
+/*https://stackoverflow.com/questions/56896462/regex-to-match-master-visa-card-with-spaces-in-javascript*/
+
+
+
+
+function checkIfButtonIsDisabled() {
+  if (
+    checkLength(cardNumber.value, 10) &&
+    checkLength(cardExpiration.value, 3) &&
+    validateCvc(cvc.value, 4)
+  ) {
+    submit_button.style = false;
+  } else {
+    
+    submit_button.disabled = true;
+  }
+}
+
+/*
+
+cardNumber.addEventListener("keyup", checkIfButtonIsDisabled);
+cardExpiration.addEventListener("keyup", checkIfButtonIsDisabled);
+cvc.addEventListener("keyup", checkIfButtonIsDisabled);
+*/
+
+/*
+
 
 function submitForm(event) {
   event.preventDefault();
@@ -67,8 +88,10 @@ function submitForm(event) {
   form.reset();
 }
 
-form.addEventListener("submit", validateForm);
+*/
+/*
 form.addEventListener("submit", submitForm);
+*/
 
 function checkLength(value, len) {
   if (value.trim().length >= len) {
@@ -77,3 +100,5 @@ function checkLength(value, len) {
     return false;
   }
 }
+
+

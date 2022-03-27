@@ -13,6 +13,7 @@ main {
 }
 
 
+
 footer {
   padding: 90px 0px 50px 0px;
   margin-top: 60px;
@@ -20,9 +21,9 @@ footer {
   justify-content: space-evenly;
   text-align: center;
   background-color: #fff;
-  position:absolute;
-  bottom:0;
-  width:100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 footer a {
@@ -216,7 +217,7 @@ textarea {
 /*Contact page*/
 
 .icon-container {
-  text-align: center;
+  text-align: center; 
 }
 
 .contact-icons {
@@ -230,8 +231,11 @@ textarea {
 }
 
 .tekst_spacing {
+
   padding: 70px 0px 10px 0px;
 }
+
+
 
 /*Products*/
 
@@ -253,8 +257,7 @@ textarea {
 .cart-image {
   width: 90px;
   height: auto;
-  border: solid; 
-
+  border: solid;
 }
 
 .products-img-container {
@@ -264,7 +267,8 @@ textarea {
   gap: 130px 10px;
   margin: 20px;
   object-fit: fill;
-  margin-top: 90px;
+  margin-top: 100px;
+  margin-bottom: 100px;
   position: relative;
 }
 
@@ -315,6 +319,17 @@ textarea {
   color: #d11557;
 }
 
+.products_footer {
+  padding: 90px 0px 50px 0px;
+  margin-top: 60px;
+  justify-content: space-evenly;
+  text-align: center;
+  background-color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
 /*products specific*/
 
 .raincoat_img {
@@ -349,7 +364,6 @@ textarea {
 
 .cart-item {
   margin-left: 15px;
-
 }
 
 .check_out_total {
@@ -408,7 +422,6 @@ hr {
 .also_purchased_container {
   display: flex;
   gap: 30px;
-  
 }
 
 /*@media*/
