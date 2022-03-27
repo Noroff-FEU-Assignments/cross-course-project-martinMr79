@@ -12,16 +12,6 @@ const button = document.querySelector(".submit_button");*/
 function validateForm(event) {
   event.preventDefault();
 
-/*
-
-  if (cardNumber.value.trim().length > 0) {
-    cardError.style.display = "none";
-  } else {
-    cardError.style.display = "block";
-  }
-
-*/
-
 if(checkLength(cardNumber.value, 10) === true) {
     cardError.style.display = "none";
 } else {
@@ -71,27 +61,7 @@ function checkIfButtonIsDisabled() {
   }
 }
 
-/*
 
-cardNumber.addEventListener("keyup", checkIfButtonIsDisabled);
-cardExpiration.addEventListener("keyup", checkIfButtonIsDisabled);
-cvc.addEventListener("keyup", checkIfButtonIsDisabled);
-*/
-
-/*
-
-
-function submitForm(event) {
-  event.preventDefault();
-  console.log(event.preventDefault());
-  message.innerHTML = '<div class="message">form passed successfully</div>';
-  form.reset();
-}
-
-*/
-/*
-form.addEventListener("submit", submitForm);
-*/
 
 function checkLength(value, len) {
   if (value.trim().length >= len) {
