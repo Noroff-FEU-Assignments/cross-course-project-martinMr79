@@ -401,13 +401,18 @@ hr {
   max-width: 190px;
   text-align: center;
   top: 480px;
+  
 }
 
 .checkout-cta p {
   text-decoration: none;
 }
 
-/*purchase Confirmed*/
+.cart-page {
+  max-width: 100%;
+}
+
+
 
 .check_container {
   border: solid 1px;
