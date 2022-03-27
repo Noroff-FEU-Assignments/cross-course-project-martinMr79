@@ -79,8 +79,11 @@ p {
 
 .back_link {
   position: relative;
-  top: 170px;
+  top: 120px;
   left: 25px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  z-index: 1000;
 }
 
 .cta {
