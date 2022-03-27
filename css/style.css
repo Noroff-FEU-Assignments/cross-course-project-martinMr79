@@ -12,8 +12,6 @@ main {
   margin: 0 auto;
 }
 
-
-
 footer {
   padding: 90px 0px 50px 0px;
   margin-top: 60px;
@@ -111,8 +109,10 @@ p {
 }
 
 .cta_small:hover {
-  transform: scale(1.08);
-  transition: transform 0.3s ease;
+  background-color: #0a3641;
+  color: white;
+
+  transition: 0.5s;
 }
 
 .active {
@@ -216,7 +216,7 @@ textarea {
 /*Contact page*/
 
 .icon-container {
-  text-align: center; 
+  text-align: center;
 }
 
 .contact-icons {
@@ -230,11 +230,8 @@ textarea {
 }
 
 .tekst_spacing {
-
   padding: 70px 0px 10px 0px;
 }
-
-
 
 /*Products*/
 
@@ -318,8 +315,6 @@ textarea {
   color: #d11557;
 }
 
-
-
 /*products specific*/
 
 .raincoat_img {
@@ -354,7 +349,6 @@ textarea {
 
 .cart-item {
   margin-left: 15px;
-  
 }
 
 .products_cart {
@@ -367,15 +361,13 @@ textarea {
 .products_cart:hover {
   background-color: #0a3641;
   color: white;
-  
+
   transition: 0.5s;
 }
-
 
 .total {
   margin-bottom: 10px 0px;
 }
-
 
 .checkout_price {
   font-weight: bold;
@@ -533,7 +525,6 @@ hr {
     height: auto;
     border: solid;
   }
-
 }
 
 @media (max-width: 500px) {
@@ -551,6 +542,17 @@ hr {
     padding-left: 150px;
   }
 
+  .productsInCart {
+    font-size: 26px;
+    min-width: 200px;
+    max-height: 200px;
+    overflow: scroll;
+    padding: 20px;
+    margin: auto;
+    position: fixed;
+    right: 50px;
+    top: 100px;
+  }
 }
 
 @media (max-height: 800px) {
@@ -558,5 +560,3 @@ hr {
     display: none;
   }
 }
-
-
