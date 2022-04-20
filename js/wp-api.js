@@ -6,7 +6,6 @@ async function getProducts(url) {
   const products = await response.json();
   console.log(products);
 
-
   products.forEach(function (product) {
     productContainer.innerHTML += `
     <div class="products">
@@ -31,5 +30,3 @@ async function getProducts(url) {
 }
 
 getProducts(baseUrl);
-
-
