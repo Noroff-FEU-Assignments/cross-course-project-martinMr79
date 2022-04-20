@@ -5,22 +5,11 @@ const cardExpiration = document.querySelector("#cardExpiration");
 const expirationError = document.querySelector("#expirationError");
 const cvc = document.querySelector("#cvc");
 const cvcError = document.querySelector("#cvcError");
-/*const validForm = document.querySelector(".validForm");
-const message = document.querySelector(".message");
-const button = document.querySelector(".submit_button");*/
 
 function validateForm(event) {
   event.preventDefault();
+  console.log("hello");
 
-/*
-
-  if (cardNumber.value.trim().length > 0) {
-    cardError.style.display = "none";
-  } else {
-    cardError.style.display = "block";
-  }
-
-*/
 
 if(checkLength(cardNumber.value, 10) === true) {
     cardError.style.display = "none";
@@ -28,22 +17,26 @@ if(checkLength(cardNumber.value, 10) === true) {
   cardError.style.display = "block";
 }
 
-  if (cardExpiration.value.trim().length > 0) {
+  
+
+  if (cardExpiration.value.trim().length > 4) {
     expirationError.style.display = "none";
   } else {
     expirationError.style.display = "block";
   }
 
-  if (cvc.value.trim().length > 0) {
+  if (cvc.value.trim().length > 3) {
     cvcError.style.display = "none";
   } else {
     cvcError.style.display = "block";
   }
 
-  console.log("hekk");
+  
 }
 
 form.addEventListener("submit", validateForm);
+
+
 
 function validateCardNumber(cardNumber) {
   const regEx =
@@ -56,42 +49,6 @@ function validateCardNumber(cardNumber) {
 /*https://stackoverflow.com/questions/56896462/regex-to-match-master-visa-card-with-spaces-in-javascript*/
 
 
-
-
-function checkIfButtonIsDisabled() {
-  if (
-    checkLength(cardNumber.value, 10) &&
-    checkLength(cardExpiration.value, 3) &&
-    validateCvc(cvc.value, 4)
-  ) {
-    submit_button.style = false;
-  } else {
-    
-    submit_button.disabled = true;
-  }
-}
-
-/*
-
-cardNumber.addEventListener("keyup", checkIfButtonIsDisabled);
-cardExpiration.addEventListener("keyup", checkIfButtonIsDisabled);
-cvc.addEventListener("keyup", checkIfButtonIsDisabled);
-*/
-
-/*
-
-
-function submitForm(event) {
-  event.preventDefault();
-  console.log(event.preventDefault());
-  message.innerHTML = '<div class="message">form passed successfully</div>';
-  form.reset();
-}
-
-*/
-/*
-form.addEventListener("submit", submitForm);
-*/
 
 function checkLength(value, len) {
   if (value.trim().length >= len) {
