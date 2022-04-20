@@ -8,12 +8,16 @@ const cvcError = document.querySelector("#cvcError");
 
 function validateForm(event) {
   event.preventDefault();
+  console.log("hello");
+
 
 if(checkLength(cardNumber.value, 10) === true) {
     cardError.style.display = "none";
 } else {
   cardError.style.display = "block";
 }
+
+  
 
   if (cardExpiration.value.trim().length > 4) {
     expirationError.style.display = "none";
@@ -27,10 +31,12 @@ if(checkLength(cardNumber.value, 10) === true) {
     cvcError.style.display = "block";
   }
 
-  console.log("hekk");
+  
 }
 
 form.addEventListener("submit", validateForm);
+
+
 
 function validateCardNumber(cardNumber) {
   const regEx =
