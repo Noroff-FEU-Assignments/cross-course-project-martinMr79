@@ -49,21 +49,6 @@ form {
   border-radius: 0.2rem;
 }
 
-.submit_button:disabled {
-  background-color: rgb(171, 198, 209);
-}
 
-.message {
-  padding: 1rem;
-  color: white;
-  border-radius: 1rem;
-  margin-bottom: 1rem;
-  text-align: center;
-  font-size: 1.9rem;
-}
 
-.back_link {
-  position: relative;
-  top: 70px;
-  left: 25px;
-}
+

@@ -77,6 +77,15 @@ p {
   font-family: "Merriweather", "regular", "Sans";
 }
 
+.back_link {
+  position: relative;
+  top: 120px;
+  left: 25px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  z-index: 1000;
+}
+
 .cta {
   background: #fff;
   color: #474204;
