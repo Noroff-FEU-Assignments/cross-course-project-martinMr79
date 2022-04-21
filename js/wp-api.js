@@ -21,7 +21,7 @@ async function getProducts(url) {
   </a>
         <h3>${product.name}</h3>
         <div class="product_description">
-        <p class="product-price">${product.price},-</p>
+        <p class="product-price">${product.prices.price},-</p>
         <button class="cta_small" data-product=${product.id}>Add to cart</button>
         </div>
     </div>
