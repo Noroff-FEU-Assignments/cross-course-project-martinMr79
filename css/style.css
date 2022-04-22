@@ -326,6 +326,11 @@ textarea {
 
 /*products specific*/
 
+.product_specific_selling_points {
+  margin-top: 30px;
+
+}
+
 .raincoat_img {
   width: 100%;
   height: auto;
