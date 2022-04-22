@@ -9,7 +9,7 @@ async function getProducts(url) {
   products.forEach(function (product) {
     productContainer.innerHTML += `
     <div class="products">
-    <a href="Product_specific.html">
+    <a href="Product_specific.html?id=${product.id}">
 
 
   <img
@@ -20,9 +20,11 @@ async function getProducts(url) {
 
   </a>
         <h3>${product.name}</h3>
-        <div class="product_description">
+        <div class="product_description ">
         <p class="product-price">${product.prices.price},-</p>
-        <button class="cta_small" data-product=${product.id}>Add to cart</button>
+        <div class="product_specific_cta">
+        <a class="cta product_specific_cta" data-product=${product.id}>Add to cart</a>
+        </div>
         </div>
     </div>
    `;
