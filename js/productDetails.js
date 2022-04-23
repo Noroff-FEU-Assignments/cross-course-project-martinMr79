@@ -25,7 +25,7 @@ async function fetchProduct() {
   <img
       src="${product.images[0].src}"
       alt="${product.name}"
-      class="raincoat_img"
+      class="product_img"
   </img>
   
   </div> 
@@ -41,9 +41,9 @@ async function fetchProduct() {
           ${product.short_description}
       </div>
 
-      
+      <div class="product_specific_cta_container">
       <a href="Check_out.html" class="cta product_specific_cta">Add to cart</a>
-
+      </div>  
     
     
         
