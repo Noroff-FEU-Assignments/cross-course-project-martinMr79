@@ -451,13 +451,15 @@ hr {
 }
 
 .purchase {
-  width: 200px;
+  max-width: 100px;
   border: 1px solid;
 }
 
 .also_purchased_container {
   display: flex;
+  justify-content: center;
   gap: 30px;
+  width: 100%;
 }
 
 /*@media*/

@@ -41,10 +41,10 @@ async function fetchProduct() {
           ${product.short_description}
       </div>
 
-      <div>
+      
       <a href="Check_out.html" class="cta product_specific_cta">Add to cart</a>
 
-    </div>
+    
     
         
     
