@@ -1,9 +1,12 @@
-import { productArray } from "./productsList.js";
+ /* import { productArray } from "./productsList.js";  */
 const productsContainer = document.querySelector(".products-img-container");
 const cart = document.querySelector(".products-img-container");
 const cartList = document.querySelector(".cart-list");
 const totalContainer = document.querySelector(".total");
 let cartArray = [];
+
+
+/*
 
 productArray.forEach(function (product) {
   productsContainer.innerHTML += `
@@ -22,6 +25,9 @@ productArray.forEach(function (product) {
     </div>
     `;
 });
+
+*/
+
 
 const addToCartButtons = document.querySelectorAll("button");
 addToCartButtons.forEach(function (button) {
