@@ -332,7 +332,7 @@ textarea {
 }
 
 .raincoat_img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   max-height: 80vh;
 }
@@ -355,6 +355,8 @@ textarea {
 .price_tags {
   font-size: 22px;
   padding: 5px;
+  margin: 25px;
+  text-align: left;
 }
 
 /*Check out*/
@@ -496,7 +498,7 @@ hr {
     height: auto;
     max-height: 80vh;
     padding: 25px;
-    float: left;
+   
   }
 
   .product_specific_tekst {
@@ -507,7 +509,15 @@ hr {
   .sale_product_specific {
     display: none;
   }
+
+  .product_layout {
+    float: left;  
+  }
+
 }
+
+
+
 
 @media (max-width: 700px) {
   .main_page_footer {

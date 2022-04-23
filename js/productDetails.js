@@ -19,7 +19,7 @@ async function fetchProduct() {
 
   function createHtml(product) {
     resultContainer.innerHTML = `
-    
+    <div class="product_layout">
 
   
   <img
@@ -28,11 +28,12 @@ async function fetchProduct() {
       class="raincoat_img"
   </img>
   
-  
+  </div> 
+
   <h2 class="product_specific_tekst">${product.name}</h2>
-        <div class="product_description">
-        <div>       
-        <p class="product-price price_tags ">${product.prices.price},-</p>
+        
+              
+        <p class= price_tags ">${product.prices.price},-</p>
         <p class="product_specific_tekst">${product.description}</p>
         
         

@@ -16,7 +16,7 @@ productArray.forEach(function (product) {
   </img></a>
         <h3>${product.name}</h3>
         <div class="product_description">
-        <p class="product-price">${product.price},-</p>
+        <p>${product.price},-</p>
         <a class="cta_small" data-product=${product.id}>Add to cart</a>
         </div>
     </div>
