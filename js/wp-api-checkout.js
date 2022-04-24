@@ -1,5 +1,5 @@
 const baseUrl =
-  "https://www.volumvekt.no/rainydays/wp-json/wc/store/products?per_page=3";
+  "https://www.volumvekt.no/rainydays/wp-json/wc/store/products?featured=true";
 const productContainer = document.querySelector(".products");
 
 async function getProducts(url) {
