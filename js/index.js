@@ -1,4 +1,4 @@
-const baseUrl = "https://www.volumvekt.no/rainydays/wp-json/wc/store/products";
+const baseUrl = "https://www.volumvekt.no/rainydays/wp-json/wc/store/products?on_sale=true";
 const productContainer = document.querySelector(".products")
 const searchButton = document.querySelector(".search-button")
 
