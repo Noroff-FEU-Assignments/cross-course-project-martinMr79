@@ -131,7 +131,9 @@ p {
 
 /*Home page*/
 
-textarea {
+
+
+.search-bar {
   border-radius: 12px;
   border-color: #474204;
   position: absolute;
@@ -538,7 +540,7 @@ hr {
 }
 
 @media (max-width: 400px) {
-  textarea {
+  .search-bar {
     width: 255px;
     height: 25px;
     font-size: 16px;
