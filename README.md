@@ -6,65 +6,40 @@ A project that i worked on during my first year as student at Noroff, school of 
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
+The task was to design a online shop, sellling rain jackets for outdoor activities. The target audience are men and women aged 30 to 50.  
 
-You can add some bullet points if you'd like to:
+The site contains following pages: 
 
-- List item 1
-- List item 2
-- List item 3
+- Home
+- List of Jacets divided by gender. 
+- Jacket specific page. 
+- checkout page. 
+- Card validation
+- Checkout success 
+- About.
+- Contact.
 
 ## Built With
 
 You can list a the tech stack that you've used over here
 
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
+- HTML
+- CSS
+- JS
 
-## Getting Started
+No frameworks where used. 
 
-### Installing
+## Designed with 
 
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
+- Adobe XD
 
-1. Clone the repo:
-
-```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
-```
-
-2. Install the dependencies:
-
-```
-npm install
-```
-
-### Running
-
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
-
-To run the app, run the following commands:
-
-```bash
-npm run start
-```
 
 ## Contributing
 
-Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate `CONTRIBUTING.md` and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
+Feel free to contact me if you have any questions, or just want to leave a comment.
 
 ## Contact
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
+[My Linkedin page](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjk04jXp4r4AhUZRfEDHQMbCSYQFnoECAcQAQ&url=https%3A%2F%2Fno.linkedin.com%2Fin%2Fmartin-mroz-28008121a&usg=AOvVaw1SSNET_dDG4MRj1uQ6PD__)
 
-[My Twitter page](www.twitter.com)
 
-[My LinkedIn page](www.linkedin.com)
-
-## License
-
-You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
-
-## Acknowledgments
-
-This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.
