@@ -42,4 +42,7 @@ Feel free to contact me if you have any questions, or just want to leave a comme
 
 [My Linkedin page](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjk04jXp4r4AhUZRfEDHQMbCSYQFnoECAcQAQ&url=https%3A%2F%2Fno.linkedin.com%2Fin%2Fmartin-mroz-28008121a&usg=AOvVaw1SSNET_dDG4MRj1uQ6PD__)
 
+[Email](https://mamr@hotmail.no)
+
+
 
