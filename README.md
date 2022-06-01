@@ -1,8 +1,8 @@
 # Your project title
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+![image](https://user-images.githubusercontent.com/80599295/171509096-4f6b597c-e7da-4bdf-a6d0-48ba8be11e68.png)
 
-A simple overview of the use/purpose of the project.
+A project that i worked on during my first year as student at Noroff, school of technology. The site was improved on as i advanced, starting with basic HTML and CSS, and later adding Javascript, and api call using wordpress to fetch data.   
 
 ## Description
 
