@@ -36,7 +36,10 @@ No frameworks where used.
 
 ## Contributing
 
-Feel free to contact me if you have any questions, or just want to leave a comment.
+If you would like to contribute to the project, make sure to open a pull request so code can be reviewed. Feel free to contact me if you have any questions, or just want to leave a comment.
+
+## Acknowledgments
+My toutors and fellow students at Noroff 
 
 ## Contact
 
